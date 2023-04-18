@@ -1,20 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="tab1">
+      <ion-icon aria-hidden="true" name="triangle"></ion-icon>
+      <ion-label>Explore</ion-label>
+    </ion-tab-button>
 
-@Component({
-  selector: 'app-tab4',
-  templateUrl: './tab4.page.html',
-  styleUrls: ['./tab4.page.scss'],
-  standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule]
-})
-export class Tab4Page implements OnInit {
+    <ion-tab-button tab="tab2">
+      <ion-icon aria-hidden="true" name="ellipse"></ion-icon>
+      <ion-label>Create</ion-label>
+    </ion-tab-button>
 
-  constructor() { }
+    <ion-tab-button tab="tab3">
+      <ion-icon aria-hidden="true" name="square"></ion-icon>
+      <ion-label>Notifications</ion-label>
+    </ion-tab-button>
 
-  ngOnInit() {
-  }
-
-}
+    <ion-tab-button tab="tab4">
+      <ion-icon aria-hidden="true" name="ellipse"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
